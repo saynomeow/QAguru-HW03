@@ -19,12 +19,12 @@ public class Additional_task_HW03 {
     @BeforeAll
     static void beforeAll() {
         Configuration.browserSize = "1920x1080";
-        baseUrl = "https://the-internet.herokuapp.com/drag_and_drop";
+        baseUrl = "https://the-internet.herokuapp.com";
     }
    //act
     @Test
     void additional_task_HW03() {
-        open (baseUrl);
+        open ("/drag_and_drop");
         $("#column-a").dragAndDropTo($("#column-b"));
    //assert
         $("#column-a").shouldHave(text("B"));
