@@ -23,7 +23,6 @@ public class QAguru_HW_03 {
         Configuration.browserSize = "1920x1080";
         baseUrl = "https://github.com/";
     }
-
    //act
     @Test
     void testHomeWork03() {
