@@ -27,6 +27,6 @@ public class QAguru_HW_03 {
         $("#wiki-pages-filter").setValue("SoftAssertions");
    //assert
         $("[data-filterable-for=wiki-pages-filter]").shouldHave(text("SoftAssertions")).click();
-        $("[id=wiki-body]").shouldHave(text("Using JUnit5 extend test class:"));
+        $("#wiki-body").shouldHave(text("Using JUnit5 extend test class:"));
     }
 }
